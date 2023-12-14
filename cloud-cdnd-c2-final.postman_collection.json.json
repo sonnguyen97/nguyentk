@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "02b8dbfd-80d0-4dd4-ab77-ca0e6a67e48f",
+		"name": "Project2_Udacity Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7100080"
+	},
+	"item": [
+		{
+			"name": "filter_image_status_200",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIiLCJpYXQiOjE2OTUyMjk2ODV9.XAyfp4U0yKnmlsqeKCE8GoBTPeuPWZZNze2AzG--p7U",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://project2udacity-dev.us-east-1.elasticbeanstalk.com/filteredimage?image_url=https://soshace.com/wp-content/uploads/2023/05/cover-node.js-jwt-879.png",
+					"protocol": "http",
+					"host": [
+						"project2udacity-dev",
+						"us-east-1",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"filteredimage"
+					],
+					"query": [
+						{
+							"key": "image_url",
+							"value": "https://soshace.com/wp-content/uploads/2023/05/cover-node.js-jwt-879.png"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "filter_image_status_404",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIiLCJpYXQiOjE2OTUyMjk2ODV9.XAyfp4U0yKnmlsqeKCE8GoBTPeuPWZZNze2AzG--p7U",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://project2udacity-dev.us-east-1.elasticbeanstalk.com/filteredimage?image_url=https://soshace.com/wp-content/uploads/2023/05/cover-node.js-jwt-879.png123",
+					"protocol": "http",
+					"host": [
+						"project2udacity-dev",
+						"us-east-1",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"filteredimage"
+					],
+					"query": [
+						{
+							"key": "image_url",
+							"value": "https://soshace.com/wp-content/uploads/2023/05/cover-node.js-jwt-879.png123"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
